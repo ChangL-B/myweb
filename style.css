@@ -1,0 +1,40 @@
+a {
+  text-decoration:none;
+  color:black;
+}
+h1 {
+  text-align: center;
+  font-size:45px;
+  border-bottom:1px solid black;
+  margin:0;
+  padding:15px;
+}
+p {
+  line-height:1.5;
+}
+ol {
+  border-right:1px solid black;
+  width:300px;
+  margin:0;
+  padding:20px;
+  padding-top:40px;
+  line-height:1.5; /*줄간격을 늘려주는 elements*/
+}
+#layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+}
+#layout #article {
+  padding:20px;
+}
+@media(max-width:700px){
+  #layout {
+    display:block;
+  }
+  ol {
+    border-right:none;
+  }
+  h1 {
+    border-bottom:none;
+  }
+}
